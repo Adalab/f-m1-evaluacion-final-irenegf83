@@ -1,0 +1,13 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: $font-principal;
+    font-size: $font-sizeDefault;
+    font-weight: 400;
+    line-height: 1.67;
+    color: $color-greyCybermen;
+    background-color: $color-whiteRose;
+}
