@@ -1,0 +1,25 @@
+.btn {
+    display: inline-block;
+    height: 45px;
+    border-radius: 200px;
+    background-color: transparent;
+    border: 2px solid $color-redDalek;
+    font-size: 20px;
+    line-height: 2.25;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    &-principal {
+        width: 76px;
+        margin-top: 30px;
+        color: $color-redDalek;
+        background-color: $color-whiteRose;
+    }
+    &-secondary {
+        width: 184px;
+        margin-top: 45px;
+        color: $color-whiteRose;
+        background-color: $color-redDalek;
+    }
+}
