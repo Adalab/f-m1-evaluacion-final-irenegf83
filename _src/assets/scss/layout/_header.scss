@@ -21,11 +21,6 @@
         color: $color-whiteRose;
     }
     &__next-section {
-        width: 45px;
-        height: 45px;
-        background-color: $color-whiteRose;
-        border-radius: 50%;
-        position: absolute;
         bottom: 53px;
         left: 50%;
         transform: translateX(-50%);
