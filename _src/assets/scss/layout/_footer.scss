@@ -1,0 +1,46 @@
+.footer {
+    background-color: $color-blueSea;
+    color: $color-whiteRose;
+    position: relative;
+    padding: 60px 0 55px;
+    text-align: center;
+    &__btn-top {
+        left: 50%;
+        top: -22.5px;
+        transform: translateX(-50%);
+        box-shadow: 0 2px 4px 0 rgba($color-blackVader, 0.5);
+    }
+}
+
+.scroll-top__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-footer {
+    &__principal,
+    &__rrss {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+}
+
+.link__main-nav,
+.link__rrss-nav {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.copyright,
+.claim {
+    font-size: 14px;
+    line-height: 2.14;
+}
+
+.heart {
+    color: $color-redDalek;
+}

@@ -22,3 +22,12 @@
         background-color: $color-redDalek;
     }
 }
+
+.main-header__next-section,
+.footer__btn-top {
+    width: 45px;
+    height: 45px;
+    background-color: $color-whiteRose;
+    border-radius: 50%;
+    position: absolute;
+}

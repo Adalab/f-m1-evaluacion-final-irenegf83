@@ -3,6 +3,17 @@
     margin: 0;
 }
 
+button {
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    background-color: transparent;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
 
 body {
     font-family: $font-principal;
@@ -11,11 +22,4 @@ body {
     line-height: 1.67;
     color: $color-greyCybermen;
     background-color: $color-whiteRose;
-}
-
-button {
-    padding: 0;
-    border: none;
-    font-family: inherit;
-    background-color: transparent;
 }
