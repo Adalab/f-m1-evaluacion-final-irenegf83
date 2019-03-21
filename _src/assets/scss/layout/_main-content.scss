@@ -3,7 +3,22 @@
         padding: 30px 15px 45px;
     }
     &__secondary {
+        padding: 30px 15px 60px;
+        background-color: $color-blueIce;
+        text-align: center;
+    }
+}
 
+.title {
+    font-family: $font-secundary;
+    font-size: 24px;
+    line-height: 1.25;
+    color: $color-blackVader;
+    &__principal-margin {
+        margin-bottom: 15px;
+    }
+    &__secondary-margin {
+        margin-bottom: 45px;
     }
 }
 
@@ -14,11 +29,26 @@
         font-weight: $font-weightDefault;
         line-height: 2.14;
     }
-    &__title {
+}
+
+// .grid-content {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: repeat(5, 1fr);
+// }
+
+.secondary {
+    &__subtitle {
         font-family: $font-secundary;
-        font-size: 24px;
-        line-height: 1.25;
+        font-size: 18px;
+        line-height: 1.67;
         color: $color-blackVader;
-        margin-bottom: 15px;
+    }
+    &__text {
+        max-width: 190px;
+        margin: 0 auto 45px;
+        &--margin {
+            margin-bottom: 0;
+        }
     }
 }
