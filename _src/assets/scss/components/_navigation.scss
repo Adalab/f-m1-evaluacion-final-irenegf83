@@ -1,9 +1,20 @@
 // FOOTER NAVIGATION
+.footer__menu {
+    @media all and (min-width: $mediaTablet) {
+        order: 2;
+        flex-basis: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
 .menu-footer {
     &__principal,
     &__social {
         text-transform: uppercase;
         margin-bottom: 30px;
+        @media all and (min-width: $mediaTablet) {
+            margin-bottom: 0;
+        }
     }
 }
 

@@ -4,6 +4,16 @@
     position: relative;
     padding: 60px 0 55px;
     text-align: center;
+    @media all and (min-width: $mediaTablet) {
+        padding: 45px 60px 45px 39px;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.copyright__wrapper {
+    order: 1;
 }
 
 .copyright,
