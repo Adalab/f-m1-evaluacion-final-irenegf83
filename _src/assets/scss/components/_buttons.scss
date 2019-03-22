@@ -1,10 +1,11 @@
+// BUTTONS/LINKS PILLS
 .btn {
     display: inline-block;
     height: 45px;
     border-radius: 100px;
     border: 2px solid $color-redDalek;
     font-size: 20px;
-    line-height: 2.25;
+    line-height: 45px;
     font-weight: 500;
     text-align: center;
     text-decoration: none;
@@ -23,6 +24,7 @@
     }
 }
 
+// BUTTONS/LINKS ROUND
 .main-header__next-section,
 .footer__btn-top {
     width: 45px;
@@ -30,4 +32,12 @@
     background-color: $color-whiteRose;
     border-radius: 50%;
     position: absolute;
+}
+
+.menu__img,
+.scroll-down__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

@@ -1,0 +1,16 @@
+// FOOTER NAVIGATION
+.menu-footer {
+    &__principal,
+    &__social {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+}
+
+.link__main-nav,
+.link__social-nav {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.88;
+}
