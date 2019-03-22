@@ -28,6 +28,9 @@
         @media all and (min-width: $mediaTablet) {
             width: 91px;
         }
+        @media all and (min-width: $mediaDesktop) {
+            width: 160px;
+        }
     }
     &-secondary {
         width: 184px;
@@ -37,6 +40,9 @@
         @media all and (min-width: $mediaTablet) {
             width: 210px;
             margin-top: 60px;
+        }
+        @media all and (min-width: $mediaDesktop) {
+            width: 255px;
         }
     }
 }

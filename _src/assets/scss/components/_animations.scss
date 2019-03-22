@@ -21,6 +21,9 @@
         background-color: $color-redDalek;
         color: $color-whiteRose;
         width: 120px;
+        @media all and (min-width: $mediaDesktop) {
+            width: 220px;
+        }
     }
 }
 
