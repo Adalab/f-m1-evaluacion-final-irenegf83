@@ -1,14 +1,5 @@
 .main-header {
     position: relative;
-    &__menu {
-        width: 44px;
-        height: 44px;
-        background-color: $color-blueTardis;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 5;
-    }
     &__hero {
         min-height: 100vh;
         position: relative;
@@ -27,6 +18,9 @@
     top: 284px;
     left: 50%;
     transform: translateX(-50%);
+    @media all and (min-width: $mediaTablet) {
+        top: 25%;
+    }
     &__title {
         font-family: $font-secundary;
         font-size: 42px;
@@ -34,10 +28,17 @@
         text-align: center;
         text-transform: uppercase;
         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        @media all and (min-width: $mediaTablet) {
+            font-size: 80px;
+            line-height: 1.33;
+        }
     }
     &__subtitle {
         font-size: 16px;
         font-weight: $font-weightDefault;
         text-align: center;
+        @media all and (min-width: $mediaTablet) {
+            font-size: 24px;
+        }
     }
 }

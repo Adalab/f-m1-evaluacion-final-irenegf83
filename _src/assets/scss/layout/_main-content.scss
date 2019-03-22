@@ -1,6 +1,9 @@
 .content {
     &__principal {
         padding: 30px 15px 45px;
+        @media all and (min-width: $mediaTablet) {
+            padding: 30px 39px 60px;
+        }
     }
     &__secondary {
         padding: 30px 15px 60px;
@@ -15,8 +18,15 @@
     line-height: 1.25;
     color: $color-blackVader;
     text-transform: capitalize;
+    @media all and (min-width: $mediaTablet) {
+        font-size: 26px;
+        line-height: 1.73;
+    }
     &__principal-margin {
         margin-bottom: 15px;
+        @media all and (min-width: $mediaTablet) {
+            margin-bottom: 30px;
+        }
     }
     &__secondary-margin {
         margin-bottom: 45px;
@@ -30,14 +40,34 @@
         font-weight: $font-weightDefault;
         line-height: 2.14;
     }
+    &__text {
+        @media all and (min-width: $mediaTablet) {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    }
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    &__item-3 {
+    grid-template-rows: repeat(5, auto);
+    @media all and (min-width: $mediaTablet) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+    &__item-1 {
+        @media all and (min-width: $mediaTablet) {
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+    }
+    &__item-5 {
         margin: 0 auto;
+        @media all and (min-width: $mediaTablet) {
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
     }
 }
 
@@ -47,17 +77,24 @@
         font-size: 18px;
         line-height: 1.67;
         color: $color-blackVader;
+        @media all and (min-width: $mediaTablet) {
+            font-size: 24px;
+            line-height: 1.25;
+        }
     }
     &__text {
         max-width: 190px;
         margin: 0 auto 45px;
+        @media all and (min-width: $mediaTablet) {
+            margin-bottom: 0;
+            font-size: 20px;
+            line-height: 1.5;
+        }
     }
 }
 
-.article {
-    &__list:last-child{
-        p {
-            margin-bottom: 0;
-        }
+.article:last-of-type {
+    .secondary__text {
+        margin-bottom: 0;
     }
 }

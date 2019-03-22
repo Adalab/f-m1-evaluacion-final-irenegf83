@@ -1,3 +1,13 @@
+/* NAVIGATION MENU */
+.main-header__menu {
+    width: 44px;
+    height: 44px;
+    background-color: $color-blueTardis;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
 /* BUTTONS/LINKS PILLS */
 .btn {
     display: inline-block;
@@ -15,12 +25,19 @@
         margin-top: 30px;
         color: $color-redDalek;
         background-color: $color-whiteRose;
+        @media all and (min-width: $mediaTablet) {
+            width: 91px;
+        }
     }
     &-secondary {
         width: 184px;
         margin-top: 45px;
         color: $color-whiteRose;
         background-color: $color-redDalek;
+        @media all and (min-width: $mediaTablet) {
+            width: 210px;
+            margin-top: 60px;
+        }
     }
 }
 
