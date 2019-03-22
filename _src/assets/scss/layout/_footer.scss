@@ -10,8 +10,8 @@
         justify-content: space-between;
         text-align: left;
     }
-    @media all and (min-width: $mediaTablet) {
-        padding: 45px 400px;
+    @media all and (min-width: $mediaDesktop) {
+        padding: 45px 350px;
     }
 }
 
