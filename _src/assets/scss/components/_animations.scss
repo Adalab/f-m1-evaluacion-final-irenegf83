@@ -1,0 +1,57 @@
+/* HEADER */
+.jump-animation {
+    animation: jump 1s .5s infinite ease-out;
+}
+@keyframes jump {
+    0% {
+        bottom: 53px;
+    }
+    50% {
+        bottom: 48px;
+    }
+    100% {
+        bottom: 53px;
+    }
+}
+
+/* MAIN */
+.grow__transition {
+    transition: background-color .5s ease-in-out, color .5s ease-in-out, width .5s ease-in-out;
+    &:hover {
+        background-color: $color-redDalek;
+        color: $color-whiteRose;
+        width: 120px;
+    }
+}
+
+.bg-color__transition {
+    transition: background-color .3s linear, border .3s linear;
+    &:hover {
+        background-color: $color-blueTardis;
+        border-color: $color-blueTardis;
+    }
+}
+
+/* FOOTER */
+.bright-shadow__transition {
+    box-shadow: 0 2px 4px 0 rgba($color-blackVader, 0.5);
+    transition: box-shadow .4s ease;
+    &:hover {
+        box-shadow: 0 2px 24px 0 rgba($color-blackVader, 0.5);
+    }
+}
+
+.rotate__animation {
+    transform: translate(-50%, -50%) rotate(0);
+    &:hover {
+        animation: loop .5s ease;
+    }
+}
+@keyframes loop {
+    0% {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

@@ -1,4 +1,4 @@
-// BUTTONS/LINKS PILLS
+/* BUTTONS/LINKS PILLS */
 .btn {
     display: inline-block;
     height: 45px;
@@ -24,7 +24,8 @@
     }
 }
 
-// BUTTONS/LINKS ROUND
+/* BUTTONS/LINKS ROUND */
+// Size
 .main-header__next-section,
 .footer__btn-top {
     width: 45px;
@@ -34,10 +35,26 @@
     position: absolute;
 }
 
-.menu__img,
-.scroll-down__img {
-    position: absolute;
-    top: 50%;
+// Position
+.main-header__next-section {
+    bottom: 53px;
     left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer__btn-top {
+    left: 50%;
+    top: 0;
     transform: translate(-50%, -50%);
+}
+
+.menu__img,
+.scroll {
+    &-down__img,
+    &-top__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
