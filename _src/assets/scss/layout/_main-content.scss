@@ -18,6 +18,22 @@
             padding: 60px 60px 60px;
         }
     }
+    &__new-section {
+        background-color: $color-redDalek;
+        color: $color-whiteRose;
+        text-align: center;
+        padding: 30px 15px 45px;
+        @media all and (min-width: $mediaTablet) {
+            background-color: $color-blueSea;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 20px 45px;
+        }
+    }
+}
+.link__new-section {
+    color: inherit;
 }
 
 .title {
